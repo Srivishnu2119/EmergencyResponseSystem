@@ -1,0 +1,23 @@
+<?php
+include("config/db_connection.php");
+include("config/constants.php");
+unset($_SESSION['sess_cipluserid']);
+unset($_SESSION['sess_ciplusername']);
+unset($_SESSION['sess_ciplusertype']);
+unset($_SESSION['sess_ciplemailid']);
+unset($_SESSION['SessCouponCode']);
+unset($_SESSION['SessCouponPercentage']);
+unset($_SESSION['SessCouponErrMsg']);
+unset($_SESSION['sess_cid']);
+unset($_SESSION['sess_subid']);
+unset($_SESSION['CARTCNT']);
+unset($_SESSION['GROSSTOTAL']);
+unset($_SESSION['gsttot']);
+unset($_SESSION['INVOICEID']);
+unset($_SESSION['MAILSENT']);
+unset($_SESSION['Redirection']);
+unset($_SESSION['isMerchandise']);
+unset($_SESSION['SESS_PAGENAME']);
+session_destroy();
+echo '<script>location.href="index"</script>';
+exit;
